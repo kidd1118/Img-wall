@@ -1,8 +1,30 @@
-   * component - image wall
-   *
-   * 依據一定演算法排列組合，原為倒金字塔型
-   * css目前預設為column-reverse改為金字塔型
-   * 數量大會一直向下延展，如有可視範圍需求
-   * 可使用固定高度容器包裝，使之產生scroll-y
-   *
-   * @author Leo.Lee
+# img-wall
+
+> A wall for images in some order
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
