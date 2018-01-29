@@ -1,6 +1,6 @@
 # img-wall
 
-> A wall for images in some order
+> A Vue.js project
 
 ## Build Setup
 
