@@ -52,14 +52,14 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      //{
-      // test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-      //  loader: 'url-loader',
-      //  options: {
-      //    limit: 10000,
-      //    name: utils.assetsPath('img/[name].[hash:7].[ext]')
-      //  }
-      //},
+      {
+       test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }
+      },
       {
         test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
         loader: 'url-loader',
@@ -76,17 +76,17 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      { 
-        test: /\.jpe?g$|\.gif$|\.png$/i, 
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          publicPath: function(url) {
-            return url;
-          },
-          outputPath: 'assets/img/'
-        } 
-      }
+      //{ 
+      //  test: /\.jpe?g$|\.gif$|\.png$/i, 
+      //  loader: 'file-loader',
+      //  options: {
+      //    name: '[name].[ext]',
+      //    publicPath: function(url) {
+      //      return '//localhost:8080/' + url;
+      //    },
+      //    outputPath: 'assets/img/'
+      //  } 
+      //}
     ]
   },
   node: {
@@ -106,8 +106,7 @@ module.exports = {
       {
         from: path.resolve(__dirname, '../src/assets'),
         to: 'assets/img/',
-        publicPath:  'assets/img/',
-        ignore: ['*.png']
+        ignore: ['.*']
       }
     ])
   ]

@@ -93,7 +93,7 @@ export default {
 
           methods: {
             getImageUrl: function(name) {
-              return "/assets/" + name + ".jpg";
+              return "/assets/img/" + name + ".jpg";
             },
 
             onClick: function() {
@@ -133,7 +133,6 @@ export default {
       var thumbnails = [
         { thumbnailId: 5, name: "05" },
         { thumbnailId: 6, name: "06" },
-        { thumbnailId: 13, name: "13" },
         { thumbnailId: 1, name: "01" },
         { thumbnailId: 6, name: "06" },
         { thumbnailId: 7, name: "07" },
@@ -141,13 +140,10 @@ export default {
         { thumbnailId: 6, name: "06" },
         { thumbnailId: 7, name: "07" },
         { thumbnailId: 8, name: "08" },
-        { thumbnailId: 9, name: "09" },
-        { thumbnailId: 9, name: "09" },
-        { thumbnailId: 9, name: "09" },
         { thumbnailId: 6, name: "06" },
         { thumbnailId: 8, name: "08" },
-        { thumbnailId: 9, name: "09" },
-        { thumbnailId: 9, name: "09" },
+        { thumbnailId: 2, name: "02" },
+        { thumbnailId: 3, name: "03" },
         { thumbnailId: 4, name: "04" }
       ];
 
