@@ -102,6 +102,13 @@ module.exports = {
     child_process: 'empty'
   },
   plugins: [
-
+    new CopyWebpackPlugin([
+      {
+        from: path.resolve(__dirname, '../src/assets'),
+        to: 'assets/img/',
+        publicPath:  'assets/img/',
+        ignore: ['*.png']
+      }
+    ])
   ]
 }
