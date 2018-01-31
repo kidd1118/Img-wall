@@ -1,6 +1,8 @@
 # img-wall
 
-> A Vue.js project
+> For specific arrange to generate a image wall.
+
+![tree](./Capture.PNG)
 
 ## Build Setup
 
