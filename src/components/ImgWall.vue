@@ -144,6 +144,11 @@ export default {
         { thumbnailId: 8, name: "08" },
         { thumbnailId: 2, name: "02" },
         { thumbnailId: 3, name: "03" },
+        { thumbnailId: 4, name: "04" },
+        { thumbnailId: 8, name: "08" },
+        { thumbnailId: 6, name: "06" },
+        { thumbnailId: 4, name: "04" },
+        { thumbnailId: 5, name: "05" },
         { thumbnailId: 4, name: "04" }
       ];
 
